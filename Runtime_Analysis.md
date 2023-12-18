@@ -1,51 +1,51 @@
 ## Analysis
 ### Vector:
 1.	File Handling and Data Parsing (loadCoursesFromFile):
-•	For each line: O(n)
-•	Total: O(n)
+-	For each line: O(n)
+-	Total: O(n)
 2.	Creating Course Objects (createCourseObjectFromLine):
-•	For each course: O(1)
-•	Total: O(n)
+-	For each course: O(1)
+-	Total: O(n)
 3.	Printing Course Information (printCourseInformation):
-•	Linear search for course: O(n)
-•	Linear search for each prerequisite: O(n) per prerequisite
-•	Total: O(n + m*n), where m is the number of prerequisites
+-	Linear search for course: O(n)
+-	Linear search for each prerequisite: O(n) per prerequisite
+-	Total: O(n + m*n), where m is the number of prerequisites
 4.	Sorting and Printing Course List (printSortedCourseList):
-•	Sorting: O(n log n) (assuming a standard sorting algorithm like quicksort)
-•	Printing: O(n)
-•	Total: O(n log n)
+-	Sorting: O(n log n) (assuming a standard sorting algorithm like quicksort)
+-	Printing: O(n)
+-	Total: O(n log n)
 ### Hash Table:
 1.	File Handling and Data Parsing (loadCoursesFromFile):
-•	For each line: O(n)
-•	Inserting into hash table: O(1) average
-•	Total: O(n)
+-	For each line: O(n)
+-	Inserting into hash table: O(1) average
+-	Total: O(n)
 2.	Creating Course Objects (createCourseObjectFromLine):
-•	For each course: O(1)
-•	Total: O(n)
+-	For each course: O(1)
+-	Total: O(n)
 3.	Printing Course Information (printCourseInformation):
-•	Direct access for course: O(1) average
-•	Direct access for each prerequisite: O(1) average
-•	Total: O(1 + m), where m is the number of prerequisites
+-	Direct access for course: O(1) average
+-	Direct access for each prerequisite: O(1) average
+-	Total: O(1 + m), where m is the number of prerequisites
 4.	Sorting and Printing Course List (printSortedCourseList):
-•	Convert to list: O(n)
-•	Sorting: O(n log n)
-•	Printing: O(n)
-•	Total: O(n log n)
+-	Convert to list: O(n)
+-	Sorting: O(n log n)
+-	Printing: O(n)
+-	Total: O(n log n)
 ### Binary Search Tree (BST):
 1.	File Handling and Data Parsing (loadCoursesFromFile):
-•	For each line: O(n)
-•	Inserting into BST: O(log n) average, O(n) worst
-•	Total: O(n log n) average, O(n^2) worst
+-	For each line: O(n)
+-	Inserting into BST: O(log n) average, O(n) worst
+-	Total: O(n log n) average, O(n^2) worst
 2.	Creating Course Objects (createCourseObjectFromLine):
-•	For each course: O(1)
-•	Total: O(n)
+-	For each course: O(1)
+-	Total: O(n)
 3.	Printing Course Information (printCourseInformation):
-•	Searching for course: O(log n) average, O(n) worst
-•	Searching for each prerequisite: O(log n) average, O(n) worst
-•	Total: O(log n + mlog n) average, O(n + mn) worst
+-	Searching for course: O(log n) average, O(n) worst
+-	Searching for each prerequisite: O(log n) average, O(n) worst
+-	Total: O(log n + mlog n) average, O(n + mn) worst
 4.	Sorting and Printing Course List (printSortedCourseList):
-•	In-order traversal: O(n)
-•	Total: O(n)
+-	In-order traversal: O(n)
+-	Total: O(n)
 
 In evaluating the three data structures—vector, hash table, and binary search tree, each has its unique set of advantages and disadvantages, particularly in the context of managing course information.
 
